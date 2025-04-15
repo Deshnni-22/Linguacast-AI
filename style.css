@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(45deg, #ff7f50, #1e90ff, #8a2be2); /* Vibrant gradient */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 25px;
+    font-size: 28px;
+    opacity: 0;
+    animation: textFadeIn 2s forwards 1s;
+}
+
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #007bff;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #0056cc;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #007bff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #0056cc;
+    transform: scale(1.05); /* Slightly scale the button on hover */
+}
+
+.output {
+    display: none;
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+}
+
+.output h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+audio {
+    margin-top: 15px;
+    width: 100%;
+}
+
+#downloadLink {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+#downloadLink:hover {
+    text-decoration: underline;
+    color: #0056cc;
+}
+#feedbackText {
+    font-size: 18px;
+    color: #444;
+    transition: all 0.3s ease-in-out;
+  }
