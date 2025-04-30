@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>French Podcast Generator</title>
-    <link rel="stylesheet" href="/static/style.css">
+  <meta charset="UTF-8">
+  <title>Multilingual Podcast Generator</title>
+  <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>🎙️ English ➜ French Podcast Generator</h1>
+  <div class="container">
+    <h1>🌍 Multilingual Podcast Generator</h1>
 
-        <textarea id="inputText" placeholder="Type your English sentence..."></textarea>
-        <button id="generateBtn">Translate & Generate Audio</button>
+    <textarea id="inputText" placeholder="Type your English sentence..."></textarea>
 
-        <div class="output" id="outputSection">
-            <h2>🔁 Result</h2>
-            <p><strong>English:</strong> <span id="englishText"></span></p>
-            <p><strong>French:</strong> <span id="frenchText"></span></p>
-            <audio id="audioPlayer" controls></audio>
-            <br />
+    <select id="languageSelector">
+      <option value="fr">French 🇫🇷</option>
+      <option value="de">German 🇩🇪</option>
+      <option value="hi">Hindi 🇮🇳</option>
+      <option value="ta">Tamil 🇮🇳</option>
+    </select>
 
-            <a id="downloadLink" download="podcast.mp3">⬇️ Download Podcast</a>
-            <br /><br />
-            
-            <button onclick="checkPronunciation()">🎤 Check Pronunciation</button>
-            <p id="feedbackText"></p>
-        </div>
+    <button id="generateBtn">🎧 Generate Podcast</button>
+
+    <div class="output" id="outputSection">
+      <h2>🗣️ Result</h2>
+      <p><strong>English:</strong> <span id="englishText"></span></p>
+      <p><strong>Translation:</strong> <span id="translatedText"></span></p>
+      <audio id="audioPlayer" controls></audio>
+      <br />
+
+      <a id="downloadLink" download="podcast.mp3">⬇️ Download Podcast</a>
+      <br /><br />
+
+      <button onclick="checkPronunciation()">🎤 Check Pronunciation</button>
+      <p id="feedbackText"></p>
     </div>
-
-    <script src="/static/script.js"></script>
-</body>
-</html>
+  </div>
