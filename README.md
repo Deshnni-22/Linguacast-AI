@@ -1,4 +1,5 @@
-#LinguacastAI 🎧🌍
+# LinguacastAI 🎧🌍
+
 Personalized AI-Powered Language Learning Podcast Generator
 
 🌟 Overview
@@ -41,7 +42,7 @@ User listens, repeats, and receives pronunciation feedback.
 bash
 Copy
 Edit
-git clone https://github.com/Deshnni-22/linguacastai.git
+git clone https://github.com/Deshnni-22/Linguacast-AI
 cd linguacastai
 # Follow backend and frontend setup instructions
 
