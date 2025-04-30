@@ -21,7 +21,7 @@ Clean UI/UX: Built with a responsive and intuitive design for seamless use acros
 🛠️ Tech Stack
 Frontend: HTML, CSS, JavaScript
 
-Backend: Python (Flask) or Node.js (based on your implementation)
+Backend: Python (Flask)
 
 AI/NLP: OpenAI API (for translation & sentence generation)
 
